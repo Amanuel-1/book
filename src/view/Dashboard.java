@@ -28,6 +28,8 @@ public class Dashboard extends JFrame {
         setTitle("Dashboard");
         setSize(1200, 720);
         setLocationRelativeTo(null);//to position the window at the center of the screen.
+        setMinimumSize(getMinimumSize());
+    
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 

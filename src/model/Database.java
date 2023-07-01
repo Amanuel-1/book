@@ -7,7 +7,7 @@ public class Database {
     Statement statement;
     ResultSet resultSet;
 
-    public Database(String dbName, Strig user, String password){
+    public Database(String dbName, String user, String password){
         try{
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
