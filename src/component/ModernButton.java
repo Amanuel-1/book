@@ -15,12 +15,12 @@ public class ModernButton extends JButton {
     private static final int ARC_HEIGHT = 20;
     private static final Border BUTTON_BORDER = BorderFactory.createEmptyBorder(10, 20, 10, 20);
 
-    public ModernButton(String text) {
+    public ModernButton(String text,Color c) {
         super(text);
 
         setFont(new Font("Arial", Font.BOLD, 14));
         setForeground(BUTTON_TEXT_COLOR);
-        setBackground(BUTTON_COLOR);
+        setBackground(c);
         setBorder(BUTTON_BORDER);
         setFocusPainted(false);
 
@@ -30,7 +30,7 @@ public class ModernButton extends JButton {
             }
 
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                setBackground(BUTTON_COLOR);
+                setBackground(c);
             }
 
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -66,7 +66,7 @@ public class ModernButton extends JButton {
         frame.setSize(300, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        ModernButton button = new ModernButton("Modern Button");
+        ModernButton button = new ModernButton("Modern Button",Color.WHITE);
         frame.getContentPane().add(button, BorderLayout.CENTER);
         frame.setVisible(true);
     }
