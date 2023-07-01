@@ -94,8 +94,8 @@ public class Dashboard extends JFrame {
 
         // Add the panels to the tabbed pane
         tabbedPane.addTab("Dashboard", null,new Home(), getTitle());
-        tabbedPane.addTab("Books",new ImageIcon("avatar.png") , booksPannel, "this is where the books are located\n a previleged person can add, read or delete books \n from this lovation.");
-        tabbedPane.addTab("Transactions", null,book, "Table 2");
+        tabbedPane.addTab("Inventory",new ImageIcon("avatar.png") , new AdminUI(), "this is where the books are located\n a previleged person can add, read or delete books \n from this lovation.");
+        tabbedPane.addTab("Sales", null,book, "Table 2");
         tabbedPane.addTab("Authors", null, panel3, "Table 3");
 
         tabbedPane.setForeground(new Color(200,200,200));
